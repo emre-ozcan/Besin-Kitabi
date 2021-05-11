@@ -1,4 +1,4 @@
-# Besin Kitabi - Kotlin İle Android Mobil Uygulama Geliştirme İleri Seviye Eğitim Projesi 📱
+# Besin Kitabı - Kotlin İle Android Mobil Uygulama Geliştirme İleri Seviye Eğitim Projesi 📱
 
 ![BesinKitabi](https://user-images.githubusercontent.com/49096704/117844948-cb3cfc00-b288-11eb-8e8f-97bc43390718.gif)
 
