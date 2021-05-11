@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="besinDetay"
+            type="com.emreozcan.besinkitabi.model.Besin" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".BesinDetayiFragment">
+
+        <ImageView
+            android:id="@+id/imageViewDetay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="86dp"
+            android:downloadImage="@{besinDetay.besinGorsel}"
+            android:minHeight="200dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/besinIsmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewDetay"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="@{besinDetay.besinIsim}"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewDetay" />
+
+        <TextView
+            android:id="@+id/besinKalori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/besinIsmi"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:layout="@id/besinIsmi"
+            android:text="@{besinDetay.besinKalori}"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/besinYag" />
+
+        <TextView
+            android:id="@+id/besinKarbonhidrat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/besinKalori"
+            android:layout_alignStart="@id/besinIsmi"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:text="@{besinDetay.besinKarbonhidrat}"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/besinIsmi" />
+
+        <TextView
+            android:id="@+id/besinProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/besinKarbonhidrat"
+            android:layout_alignStart="@id/besinIsmi"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:text="@{besinDetay.besinProtein}"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/besinKalori" />
+
+        <TextView
+            android:id="@+id/besinYag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/besinProtein"
+            android:layout_alignStart="@id/besinIsmi"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:text="@{besinDetay.besinYag}"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/besinKarbonhidrat" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
